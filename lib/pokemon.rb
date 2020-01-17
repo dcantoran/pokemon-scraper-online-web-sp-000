@@ -13,7 +13,7 @@ class Pokemon
   
   def self.find(lookup_id, db)
     poke = db.execute("SELECT * FROM pokemon WHERE id = ?", [lookup_id])
-    new_pokemon = self.new(poke[0][0], poke[0][1], poke[0][2], poke[0][3])
+    new_pokemon = self.new(poke)
     # new_pokemon[:id] = poke[0][0]
     # new_pokemon[:name] = poke[0][1]
     # new_pokemon[:type] = poke[0][2]
