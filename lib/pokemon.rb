@@ -17,6 +17,7 @@ class Pokemon
     new_pokemon.id = poke[0][0]
     new_pokemon.name = poke[0][1]
     new_pokemon.type = poke[0][2]
+    new_pokemon.db = poke[0][3]
     new_pokemon
   end 
   
